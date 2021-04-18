@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"tigger\gpio.o"
+"tigger\stm32f1xx_it.o"
+"tigger\stm32f1xx_hal_msp.o"
+"tigger\main.o"
+"tigger\tim.o"
+"tigger\74hc595.o"
+"tigger\startup_stm32f103xb.o"
+"tigger\stm32f1xx_hal_dma.o"
+"tigger\stm32f1xx_hal_gpio.o"
+"tigger\stm32f1xx_hal.o"
+"tigger\stm32f1xx_hal_pwr.o"
+"tigger\stm32f1xx_hal_flash.o"
+"tigger\stm32f1xx_hal_tim_ex.o"
+"tigger\stm32f1xx_hal_gpio_ex.o"
+"tigger\stm32f1xx_hal_cortex.o"
+"tigger\stm32f1xx_hal_tim.o"
+"tigger\stm32f1xx_hal_rcc.o"
+"tigger\stm32f1xx_hal_flash_ex.o"
+"tigger\stm32f1xx_hal_rcc_ex.o"
+"tigger\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "Tigger\Tigger.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Tigger.map" -o Tigger\Tigger.axf
